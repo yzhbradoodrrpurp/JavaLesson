@@ -43,7 +43,7 @@ public class Account {
         dateCreated = null;
     }
 
-    public int getId() {
+    public int getID() {
         return id;
     }
 
@@ -95,7 +95,7 @@ public class Account {
 
     public static void main(String[] args) {
         Account account = new Account(32, 5000, new Account().new Date(2024, 6, 1));
-        System.out.println("Account ID: " + account.getId());
+        System.out.println("Account ID: " + account.getID());
         System.out.println("Balance: $" + account.getBalance());
         System.out.println("Annual Interest Rate: " + Account.getAnnualInterestRate() + "%");
         System.out.println("Date Created: " + account.getDateCreated().getYear() + "-" + account.getDateCreated().getMonth() + "-" + account.getDateCreated().getDay());
