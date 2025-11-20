@@ -76,11 +76,13 @@ public class DeviceList {
 
                 m = qualP.matcher(cell);
                 String quality = "";
-                if(m.find()) quality = m.group(1).trim();
+                if(m.find())
+                    quality = m.group(1).trim();
 
                 m = encP.matcher(cell);
                 String encryption = "";
-                if(m.find()) encryption = m.group(1).trim();
+                if(m.find())
+                    encryption = m.group(1).trim();
 
                 Device device = new Device(address, essid, mode, channel, signal, quality, encryption);
                 addDevice(device);
